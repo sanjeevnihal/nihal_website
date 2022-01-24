@@ -1,0 +1,805 @@
+body {
+  margin: 2%;
+  padding: 0;
+  background-color: var(--secondary-color);
+  font-family: 'Open Sans', sans-serif;
+  color: var(--primary-color);
+}
+
+.scroll-icon{
+  visibility: hidden;
+}
+
+/* .popup-screen {
+  width: 100%;
+  background: red;
+  position: absolute;
+  z-index: 5000;
+  color: #ffffff;
+  text-align: center;
+  top: 0;
+  right: 0;
+} */
+
+h1 {
+  font-size: 18rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+p {
+  font-size: 1.5rem;
+  margin-left: 1%;
+}
+
+.intro-text {
+  font-size: 6rem;
+}
+
+.sub-intro {
+  font-size: 4rem;
+}
+
+.intro-para {
+  padding-right: 30%;
+  font-size: 21px;
+  margin-top: 5%;
+}
+
+/* .about-link{
+  color: var(--primary-color);
+  margin-left: 40%;
+}
+
+.about-link a: hover{
+  color: grey !important;
+} */
+/* Navbar Section */
+.navbar-brand {
+  /* width: 5%; */
+  font-size: 2.5rem;
+  font-weight: bold;
+  /* background-color: var(--primary-color); */
+  color: var(--primary-color) !important;
+  padding: .5% 1%;
+}
+
+.brand-two{
+  font-family: 'Trispace', sans-serif;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.navbar{
+  background: var(--secondary-color);
+}
+
+.navbar-toggler{
+  width: 20px;
+  height: 20px;
+  position: relative;
+  transition: .5s ease-in-out;
+
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus{
+  outline: none;
+  box-shadow: none;
+  border:0;
+}
+
+.navbar-toggler span {
+  margin: 0;
+  padding: 0;
+}
+
+.toggler-icon{
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: var(--primary-color);
+  border-radius: 2px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.middle-bar{
+  margin-top: 0px;
+}
+
+/* when navigation is clicked */
+
+.navbar-toggler .top-bar{
+  margin-top: 0px;
+  transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar{
+  margin-top: 0px;
+  transform: rotate(-135deg);
+}
+
+/* State when navbar is collapsed */
+
+.navbar-toggler.collapsed .top-bar{
+  margin-top: -20px;
+  transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar{
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar{
+  margin-top: 20px;
+  transform: rotate(0deg);
+}
+
+.navbar-nav {
+  position: relative;
+  left: 63%;
+}
+
+.nav-item {
+  font-size: 1.5rem;
+  margin-left: 3rem;
+}
+
+.nav-link {
+  color: var(--primary-color) !important;
+}
+
+.nav-link:hover {
+  color: #3C3C3C;
+}
+
+/* .mobile-navlinks {
+  visibility: hidden;
+} */
+
+/* This below set of code is for light to dark switch */
+:root {
+  --primary-color: #181818;
+  --secondary-color: #FFFFFF;
+}
+
+.light-theme {
+  --primary-color: #FFFFFF;
+  --secondary-color: #181818;
+}
+
+#iconlight {
+  width: 2rem;
+  cursor: pointer;
+  position: absolute;
+  font-size: 4rem;
+  bottom: 3%;
+  right: 42%;
+}
+
+/* ----------------------------------------------------- */
+.left-container {
+  margin-top: 4%;
+  height: 700px;
+}
+
+.left-center {
+  margin-left: 5%;
+}
+
+.view-me {
+  /* display: block; */
+  display: none;
+  margin: 5% 1%;
+}
+
+.view-me a {
+  text-decoration: none;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-size: 25px;
+  padding: .5% 2%;
+  /* border-radius: 12px; */
+}
+
+.right-container {
+  height: 700px;
+}
+
+.social-icons a {
+  font-size: 2rem;
+  margin-right: 2%;
+  margin-top: 10%;
+  margin-left: 1%;
+  color: var(--primary-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.social-icons .iconify {
+  margin-right: 2%;
+  margin-left: 1%;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+/* Right Section */
+.ver-line {
+  border-left: 3px solid;
+  height: 90%;
+  position: absolute;
+  top: 5%;
+  left: 60%;
+  color: #3C3C3C !important;
+}
+
+.project-tiles {
+  margin: 3% 30%;
+}
+
+.card {
+  position: relative;
+  right: 0;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  color: #212121;
+}
+
+.project-tiles :hover {
+  color: grey;
+}
+
+.card-title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.card-body {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.project-container {
+  height: 120%;
+  width: 938px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+/* Footer Section */
+.footer-section {
+  margin: 14% 1%;
+  font-size: 1.5rem;
+  /* font-family: 'Open Sans', sans-serif; */
+}
+
+.footer-section .msg-line {
+  padding-left: 45%;
+}
+
+.footer-section a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+/* =================================== */
+/* .discord-bot {
+  position: absolute;
+  font-size: 4rem;
+  bottom: 1%;
+  right: 43%;
+}
+
+.discord-bot a {
+  text-decoration: none;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+#discord-server {
+  position: absolute;
+  bottom: 10%;
+  right: 43%;
+  visibility: hidden;
+}
+
+#discord-server i {
+  position: absolute;
+  font-size: 2rem;
+  color: #212121;
+  margin-left: 2%;
+  cursor: pointer;
+}
+
+#discord-server i:hover {
+  color: grey;
+}
+
+#discord-server.active {
+  visibility: visible;
+  bottom: 10%;
+} */
+/* =================================== */
+::-webkit-scrollbar {
+  width: 18px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+}
+
+/* Mobile Version */
+@media screen and (max-width: 480px) {
+  body {
+    margin: 2%;
+  }
+
+  .intro-text, .sub-intro {
+    font-size: 3rem;
+    padding: 2% 0;
+  }
+
+  .intro-para {
+    font-size: .8rem;
+    padding-right: 15%;
+    padding-top: 2%;
+    padding-left: 0;
+  }
+
+  .navbar {
+    width: 100%;
+    padding: 2%;
+    position: fixed;
+    margin-bottom: 5%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+
+  .navbar-nav{
+    left: -10%;
+    margin-top: 5%;
+  }
+
+  .navbar-brand {
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  /* .navbar-toggler{
+    visibility: hidden;
+  } */
+  .left-container {
+    margin-top: 15%;
+  }
+
+  .right-container {
+    margin-top: -15%;
+  }
+
+  .project-container {
+    height: 80%;
+    width: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+
+  .card-title {
+    padding: 0;
+    margin: 0;
+  }
+
+  .card-text {
+    font-size: 2rem;
+    padding: 0 3%;
+  }
+
+  .project-tiles img {
+    width: 80%;
+  }
+
+  .social-icons {
+    display: inline-grid;
+    margin-top: 10%;
+  }
+
+  .social-icons a {
+    font-size: 2.5rem;
+    margin-right: 40%%;
+    margin-top: 60%;
+    margin-left: 0;
+    color: var(--primary-color);
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .ver-line {
+    display: none;
+  }
+
+  .project-container {
+    margin-top: 55%;
+  }
+
+  .footer-section {
+    display: inline-block;
+    position: absolute;
+    margin: 12% 1%;
+    bottom: 0;
+    left: 4%;
+    margin-bottom: 5%;
+  }
+
+  .footer-section a {
+    font-size: 1rem;
+    display: inline-block;
+  }
+
+  .scroll-icon{
+    visibility: visible;
+    padding-left: 30px;
+    font-size: 14px;
+    color: var(--primary-color);
+  }
+
+  .scroll-icon h5{
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: var(--primary-color);
+  }
+
+  #iconlight {
+    width: 2rem;
+    cursor: pointer;
+    position: absolute;
+    font-size: 4rem;
+    bottom: 3%;
+    right: 5%;
+  }
+
+  /* .discord-bot {
+    font-size: 3rem;
+    position: absolute;
+    right: 5%;
+    margin-bottom: 0;
+  } */
+  /* #discord-server {
+    position: absolute;
+    right: 12%;
+    top: 18%;
+  } */
+  .project-tiles {
+    margin: 0;
+  }
+
+  .card-body {
+    margin: 0;
+    padding-bottom: 5%;
+    position: relative;
+    right: 5%;
+  }
+
+  .card-body h5 {
+    font-size: 2rem;
+    margin-left: 4%;
+  }
+
+  .card-body p {
+    font-size: 1.1rem;
+    margin: 0;
+    width: 85%;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* .mobile-navlinks {
+    visibility: visible;
+    margin-top: 15%;
+    position: absolute;
+    top: 100%;
+    left: 5%;
+    width: 95%;
+  } */
+
+  .view-me {
+    display: none;
+  }
+
+  /* .mobile-navlinks a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--primary-color);
+    margin-right: 10%;
+  } */
+}
+
+@media screen and (max-width: 380px) {
+  .social-icons {
+    display: inline-grid;
+    margin-top: 0;
+  }
+
+  .social-icons a {
+    font-size: 2.5rem;
+    margin-right: 40%%;
+    margin-top: 60%;
+    margin-left: 1%;
+    color: var(--primary-color);
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+/* =========== Small Screens and Laptops ================ */
+@media (min-width: 1200px) and (max-width: 1367px) {
+  .navbar {
+    width: 100%;
+    padding: 2%;
+    position: fixed;
+    margin-bottom: 5%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+
+  .intro-text, .sub-intro {
+    font-size: 2rem;
+    padding: 2% 0;
+  }
+
+  .intro-para {
+    font-size: 1rem;
+    padding-right: 15%;
+    padding-left: 0;
+  }
+
+  .navbar-nav {
+    position: relative;
+    left: 60%;
+  }
+
+  .nav-item {
+    font-size: 1rem;
+    margin-left: 3rem;
+  }
+
+  .nav-link {
+    color: var(--primary-color);
+  }
+
+  .navbar-brand {
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .project-container {
+    height: 95%;
+    width: 685px;
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+
+  .left-container {
+    margin-top: 8%;
+    height: 50px;
+  }
+
+  .right-container {
+    position: relative;
+    margin-top: 5%;
+    right: 25px;
+    bottom: 78%;
+    height: 575px;
+  }
+
+  .ver-line {
+    border-left: 3px solid;
+    height: 106%;
+    position: absolute;
+    top: -35px;
+    left: 7%;
+    color: #3C3C3C !important;
+  }
+
+  .card {
+    position: relative;
+    right: 100px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: #212121;
+  }
+
+  .card-body {
+    margin: 0;
+    padding: 2% 0;
+  }
+
+  .card-title {
+    font-size: 1.5rem;
+  }
+
+  .card-text {
+    font-size: 1rem;
+    padding-right: 15%;
+    /* padding: 0 3%; */
+  }
+
+  .project-tiles img {
+    width: 100%;
+  }
+
+  #iconlight {
+    width: 2rem;
+    cursor: pointer;
+    position: absolute;
+    font-size: 4rem;
+    bottom: 4%;
+    right: 50%;
+    z-index: 100;
+  }
+
+  .footer-section {
+    display: block;
+    margin-top: 15%;
+  }
+
+  .footer-section a {
+    font-size: 1rem;
+    display: inline-block;
+  }
+}
+
+/* ======= Tablet Screen ========== */
+@media (max-width: 768px) and (min-width: 481px) {
+  .navbar {
+    width: 100%;
+    padding: 2%;
+    position: fixed;
+    margin-bottom: 5%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+
+  .navbar-nav {
+    position: relative;
+    left: 15%;
+  }
+
+  .nav-item {
+    font-size: 1.5rem;
+    margin-left: 3rem;
+  }
+
+  .nav-link {
+    color: var(--primary-color);
+  }
+
+  .navbar-brand {
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .project-container {
+    height: 80%;
+    width: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+
+  .intro-para {
+    font-size: 1rem;
+    padding-right: 10%;
+    padding-top: 2%;
+    padding-left: 0;
+  }
+
+  .social-icons {
+    display: inline-grid;
+    margin-top: 0;
+  }
+
+  .social-icons a {
+    font-size: 2.5rem;
+    margin-right: 40%%;
+    margin-top: 60%;
+    margin-left: 1%;
+    color: var(--primary-color);
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .footer-section {
+    display: inline-block;
+    position: absolute;
+    margin: 12% 1%;
+    bottom: 0;
+    left: 4%;
+    margin-bottom: 5%;
+  }
+
+  .footer-section a {
+    font-size: 1rem;
+    display: inline-block;
+  }
+
+  .view-me {
+    display: none;
+  }
+
+  .ver-line {
+    border-left: 3px solid;
+    height: 85%;
+    position: relative;
+    top: 100%;
+    left: 7%;
+    color: #3C3C3C !important;
+  }
+
+  .left-container {
+    margin-top: 15%;
+  }
+
+  .right-container {
+    position: absolute;
+    margin-top: 5%;
+    right: 25px;
+    bottom: 78%;
+  }
+
+  .project-container {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+
+  .card-body {
+    margin: 0;
+    padding: 2% 0;
+  }
+
+  .card-title {
+    font-size: 1.5rem;
+  }
+
+  .card-text {
+    font-size: 1rem;
+    padding-right: 15%;
+    /* padding: 0 3%; */
+  }
+
+  .project-tiles img {
+    width: 50%;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  #iconlight {
+    width: 2rem;
+    cursor: pointer;
+    position: absolute;
+    font-size: 4rem;
+    bottom: 3%;
+    right: 35px;
+  }
+}
